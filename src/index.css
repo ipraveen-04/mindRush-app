@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#142b62;background:#f7faff} button,input{font:inherit} button{cursor:pointer}.brand-gradient{background:linear-gradient(90deg,#2f63ff 0%,#8140ee 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.label{display:block;margin-bottom:8px;font-size:15px;font-weight:700;color:#12285f}.field{height:52px;width:100%;border:1px solid #cfe0f8;border-radius:11px;background:#fff;color:#172e68;outline:none;padding:0 16px;transition:.2s}.field::placeholder{color:#91a9d2}.field:focus{border-color:#5969ff;box-shadow:0 0 0 3px rgba(82,96,255,.1)}.primary-btn{display:flex;height:52px;width:100%;align-items:center;justify-content:center;gap:9px;border:0;border-radius:11px;background:linear-gradient(90deg,#4d5eff,#5e4cf2);color:#fff;font-weight:800;box-shadow:0 8px 20px rgba(79,86,245,.2);transition:border-color .2s,box-shadow .2s}.primary-btn:hover{box-shadow:0 10px 22px rgba(79,86,245,.22)}.social-btn{height:52px;border:1px solid #d8e5f8;border-radius:11px;background:#fff;color:#49639a;font-weight:700;display:flex;align-items:center;justify-content:center;gap:14px}.social-btn:hover{background:#f8fbff}.secondary-btn{display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #d8e5f8;border-radius:12px;padding:0 20px;height:52px;font-weight:800;color:#4f68a2;background:white}
+@media (max-width:1023px){.auth-shell{} }
+
+/* Responsive polish for phones, tablets, laptops and large desktop screens */
+html{scroll-behavior:smooth}
+body{min-width:320px;overflow-x:hidden}
+img,svg{max-width:100%}
+button,a,input{touch-action:manipulation}
+@media (max-width:639px){
+  .field{height:50px;font-size:14px}
+  .primary-btn,.social-btn,.secondary-btn{min-height:50px}
+}
+@media (min-width:640px) and (max-width:1023px){
+  .auth-shell-mobile{padding:32px}
+}
+@media (min-width:1536px){
+  .dashboard-content{max-width:1500px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+.field-icon-input{padding-left:56px!important;padding-right:56px!important}
